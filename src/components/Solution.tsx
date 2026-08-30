@@ -1,10 +1,12 @@
 import SectionHeading from "./SectionHeading";
 import StandbyLoop from "./StandbyLoop";
+import HexBackground from "./HexBackground";
 
 export default function Solution() {
   return (
-    <section id="solution" className="bg-brand-blue-light/40 py-20 sm:py-28">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+    <section id="solution" className="relative overflow-hidden py-20 sm:py-28">
+      <HexBackground />
+      <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Solution"
           title="Meet E-Print — printing without the wait"

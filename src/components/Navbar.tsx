@@ -6,11 +6,10 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#problem", label: "Problem" },
+  { href: "#why", label: "Why E-Print" },
   { href: "#solution", label: "Solution" },
   { href: "#features", label: "Features" },
   { href: "#partner", label: "Partner" },
-  { href: "#team", label: "Team" },
 ];
 
 export default function Navbar() {
