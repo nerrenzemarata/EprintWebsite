@@ -9,8 +9,8 @@ export default function Solution() {
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
           eyebrow="Our Solution"
-          title="Meet E-Print — printing without the wait"
-          description="A self-service kiosk that lets anyone print or photocopy documents in minutes, any time of day. Send a file, pay at the machine, and collect a printout — no staff required. Below is a live preview of the exact interface running on every E-Print unit."
+          title="A closer look at the E-Print platform"
+          description="From file upload to finished printout, the entire transaction happens on one guided touchscreen — no staff required. What follows is a live preview of the exact interface running on every deployed unit."
         />
 
         <div className="mt-14">
