@@ -60,7 +60,7 @@ export default function WhatIsEprint() {
 
         <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] shadow-2xl shadow-brand-blue/15 ring-1 ring-black/5">
           <Image
-            src="/images/machine-in-use.png"
+            src="/images/machine-with-person.png"
             alt="A person using the E-Print kiosk, resting a hand on its scanner cover"
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"

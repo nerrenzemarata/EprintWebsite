@@ -26,7 +26,7 @@ const gallery = [
     className: "",
   },
   {
-    src: "/images/machine-in-use.png",
+    src: "/images/machine-with-person.png",
     alt: "A person using the E-Print kiosk",
     caption: "Simple, guided use",
     className: "",
