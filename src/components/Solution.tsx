@@ -8,9 +8,9 @@ export default function Solution() {
       <HexBackground />
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Our Solution"
-          title="A closer look at the E-Print platform"
-          description="From file upload to finished printout, the entire transaction happens on one guided touchscreen — no staff required. Watch the kiosk in action below."
+          eyebrow="See It in Action"
+          title="Watch the E-Print commercial"
+          description="From sending your file to collecting your printout, everything happens on one guided touchscreen, with no staff required. Press play to watch with sound."
         />
 
         <div className="mt-14">

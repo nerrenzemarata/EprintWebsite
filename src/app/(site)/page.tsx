@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import WhatIsEprint from "@/components/WhatIsEprint";
 import Product from "@/components/Product";
+import Solution from "@/components/Solution";
 import HowItWorks from "@/components/HowItWorks";
 import WhyChoose from "@/components/WhyChoose";
 import CtaBand from "@/components/CtaBand";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero videoSrc="/videos/commercial.mp4" />
       <WhatIsEprint />
       <Product />
+      <Solution />
       <HowItWorks />
       <WhyChoose />
       <CtaBand
