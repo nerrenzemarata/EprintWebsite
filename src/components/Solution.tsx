@@ -1,5 +1,5 @@
 import SectionHeading from "./SectionHeading";
-import StandbyLoop from "./StandbyLoop";
+import CommercialVideo from "./CommercialVideo";
 import HexBackground from "./HexBackground";
 
 export default function Solution() {
@@ -10,11 +10,11 @@ export default function Solution() {
         <SectionHeading
           eyebrow="Our Solution"
           title="A closer look at the E-Print platform"
-          description="From file upload to finished printout, the entire transaction happens on one guided touchscreen — no staff required. What follows is a live preview of the exact interface running on every deployed unit."
+          description="From file upload to finished printout, the entire transaction happens on one guided touchscreen — no staff required. Watch the kiosk in action below."
         />
 
         <div className="mt-14">
-          <StandbyLoop />
+          <CommercialVideo />
         </div>
       </div>
     </section>

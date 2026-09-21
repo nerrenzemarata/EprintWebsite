@@ -12,7 +12,7 @@ const points = [
     icon: ScanLine,
     title: "Automated Payment Reconciliation",
     description:
-      "GCash payments are detected and confirmed automatically the moment they arrive — no manual checking, no missed transactions, no end-of-day guesswork.",
+      "Online payments are detected and confirmed automatically the moment they arrive — no manual checking, no missed transactions, no end-of-day guesswork.",
   },
   {
     icon: Gauge,

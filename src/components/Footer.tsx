@@ -1,11 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Mail, MapPin, ArrowRight } from "lucide-react";
+
+const footerLinks = [
+  { href: "/about", label: "About E-Print" },
+  { href: "/product", label: "Product" },
+  { href: "/how-it-works", label: "How It Works" },
+  { href: "/request-deployment", label: "Request Deployment" },
+  { href: "/partner", label: "Partner With Us" },
+  { href: "/contact", label: "Contact" },
+];
 
 export default function Footer() {
   return (
-    <footer id="contact" className="bg-brand-ink py-16 text-white">
+    <footer className="bg-brand-ink py-16 text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-8">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_auto_1fr] lg:gap-16">
           <div className="flex flex-col gap-4">
             <Image
               src="/images/logo-transparent.png"
@@ -20,6 +30,19 @@ export default function Footer() {
               printing accessible, 24/7.
             </p>
           </div>
+
+          <nav aria-label="Footer" className="flex flex-col gap-3">
+            <h3 className="font-display text-lg font-semibold">Explore</h3>
+            {footerLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm text-white/70 hover:text-white"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
 
           <div className="flex flex-col gap-4 lg:items-end">
             <h3 className="font-display text-lg font-semibold">
@@ -53,7 +76,10 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-xs text-white/40 sm:flex-row">
           <span>&copy; {new Date().getFullYear()} E-Print Vendo Printing. All rights reserved.</span>
-          <span>Supports UN SDG 4 · 8 · 9</span>
+          <span className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+            <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-white">Terms &amp; Conditions</Link>
+          </span>
         </div>
       </div>
     </footer>

@@ -31,7 +31,7 @@ const features = [
   {
     icon: Banknote,
     title: "Bill Acceptor",
-    description: "Accepts cash bills alongside coins and GCash for total payment flexibility.",
+    description: "Accepts cash bills alongside coins and online payment for total payment flexibility.",
   },
   {
     icon: Printer,
