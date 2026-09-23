@@ -26,9 +26,17 @@ export async function updateSession(request: NextRequest) {
     },
   });
 
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  let user: Awaited<ReturnType<typeof supabase.auth.getUser>>["data"]["user"] =
+    null;
+  try {
+    ({
+      data: { user },
+    } = await supabase.auth.getUser());
+  } catch {
+    // A transient failure reaching Supabase shouldn't 503 the page — fail
+    // closed by treating the request as unauthenticated, same as if there
+    // were no session cookie at all.
+  }
 
   const { pathname } = request.nextUrl;
   const needsSignIn =

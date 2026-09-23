@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Terms & Conditions | E-Print Vendo Printing",
   description: "The terms for using the E-Print website, deployment requests, and partner applications.",
-};
+  path: "/terms",
+});
 
 const sections = [
   {

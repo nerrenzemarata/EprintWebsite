@@ -1,10 +1,11 @@
-import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Privacy Policy | E-Print Vendo Printing",
   description: "How E-Print collects, uses, and protects your personal information.",
-};
+  path: "/privacy",
+});
 
 const sections = [
   {

@@ -1,15 +1,16 @@
-import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import WhatIsEprint from "@/components/WhatIsEprint";
 import WhyEprint from "@/components/WhyEprint";
 import Impact from "@/components/Impact";
 import CtaBand from "@/components/CtaBand";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "About E-Print | E-Print Vendo Printing",
   description:
     "Learn what E-Print is, who it's for, and the printing gap it was built to close.",
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import {
   TrendingUp,
   Truck,
@@ -10,12 +9,14 @@ import {
 import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import CtaBand from "@/components/CtaBand";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Partner With Us | E-Print Vendo Printing",
   description:
     "Explore partnership and investment opportunities to help expand E-Print to more locations.",
-};
+  path: "/partner",
+});
 
 const reasons = [
   {

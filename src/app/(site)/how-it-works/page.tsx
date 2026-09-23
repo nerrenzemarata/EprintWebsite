@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
 import HowItWorks from "@/components/HowItWorks";
 import Solution from "@/components/Solution";
 import CtaBand from "@/components/CtaBand";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "How It Works | E-Print Vendo Printing",
   description:
     "From deployment request to site assessment, installation, and ongoing support — how E-Print gets to your location.",
-};
+  path: "/how-it-works",
+});
 
 export default function HowItWorksPage() {
   return (

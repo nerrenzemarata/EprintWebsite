@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import { Mail, MapPin, Clock } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 import PageHeader from "@/components/PageHeader";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Contact | E-Print Vendo Printing",
   description:
     "Get in touch with the E-Print team about pricing, deployment, or partnerships.",
-};
+  path: "/contact",
+});
 
 const EMAIL = "nerrenzemarata@gmail.com";
 

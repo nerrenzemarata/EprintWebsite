@@ -1,14 +1,15 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, Camera, ClipboardList, MapPin, UserRound } from "lucide-react";
 import PageHeader from "@/components/PageHeader";
 import HowItWorks from "@/components/HowItWorks";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Request Deployment | E-Print Vendo Printing",
   description:
     "Ask for an E-Print kiosk at your school, store, or office and track your request online.",
-};
+  path: "/request-deployment",
+});
 
 const needs = [
   { icon: UserRound, title: "Your details", text: "Name, email, contact number, and address. You'll enter these when you create your account." },

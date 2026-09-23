@@ -1,16 +1,17 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import Product from "@/components/Product";
 import Features from "@/components/Features";
 import Solution from "@/components/Solution";
 import CtaBand from "@/components/CtaBand";
+import { pageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Product | E-Print Vendo Printing",
   description:
     "The E-Print kiosk: touchscreen, coin and bill acceptors, online payment, printer and photocopier in one unit.",
-};
+  path: "/product",
+});
 
 const gallery = [
   {
